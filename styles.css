@@ -283,3 +283,194 @@ body {
         gap: 1rem;
     }
 }
+
+/* Specials Page Styles */
+.special-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.product-image {
+    position: relative;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1rem;
+}
+
+.product-card {
+    position: relative;
+}
+
+/* Team Page Styles */
+.team-role {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Semantic elements styling */
+main {
+    min-height: 50vh;
+}
+
+article.product-card {
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+article.product-card:hover {
+    border-color: #3498db;
+}
+
+section.feature h3 {
+    color: #2c3e50;
+}
+
+aside.features .feature h3 {
+    color: white;
+}
+
+aside.features .feature p {
+    color: #bdc3c7;
+}
+
+/* Special Banner Hero - Different from regular hero */
+.special-banner-hero {
+    padding: 100px 0 0;
+}
+
+.banner-container {
+    max-width: 100%;
+    margin: 0;
+}
+
+.banner-image {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.banner-overlay h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banner-overlay p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.banner-cta-button {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    border: 2px solid #e74c3c;
+}
+
+.banner-cta-button:hover {
+    background: transparent;
+    border-color: white;
+    transform: scale(1.05);
+}
+
+/* About Banner Animations */
+.about-banner .banner-image img {
+    filter: blur(10px);
+    opacity: 0;
+    animation: imageReveal 2.5s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+.banner-title {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: slideUpBanner 1.2s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.banner-subtitle {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: slideUpBanner 1.2s ease-out forwards;
+    animation-delay: 1.3s;
+}
+
+.banner-cta-button {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: slideUpBanner 1.2s ease-out forwards;
+    animation-delay: 1.6s;
+}
+
+/* Banner-specific animations */
+@keyframes slideUpBanner {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes imageReveal {
+    0% {
+        filter: blur(15px);
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    50% {
+        filter: blur(5px);
+        opacity: 0.5;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+        transform: scale(1);
+    }
+}
