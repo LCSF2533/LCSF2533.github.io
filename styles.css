@@ -1,3 +1,5 @@
+/* css */
+
 * {
     margin: 0;
     padding: 0;
@@ -760,7 +762,6 @@ tr:hover {
     }
 }
 
-/* media.css - Media Page Specific Styles */
 
 /* Media Container */
 .media-container {
@@ -1251,3 +1252,4 @@ audio::-webkit-media-controls-play-button {
         padding: 1rem;
     }
 }
+
